@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBAEA8;
+    padding: 0.7rem 4rem;
+}
+
+#logo{
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    padding-left: 20px;
+    color: #FFFAC9;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: #FFFAC9;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #55C9C8;
+    transition: 0.3s all;
+}
+
+#sobremim{
+    border-bottom: 2px solid #FFFAC9;
+    padding-bottom: 2px;
+}
+
+body{
+    background-color: #FFFAC9;
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+aside{
+    margin: 50px;
+}
+
+h1{
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    color: #FBAEA8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p{
+    font-family: "Exo 2", sans-serif;
+    color: #55C9C8;
+    font-weight: 500;
+}
+
+.destaque-verde{
+    font-family: "Exo 2", sans-serif;
+    color: #9CCF91;
+    font-weight: 500;
+}
+
+.destaque-rosa{
+    font-family: "Exo 2", sans-serif;
+    color: #FBAEA8;
+    font-weight: 500;
+}
+
+img{
+    width: 400px;
+}
+
+figure{
+    display: flex;
+}
+
+#instagram-link{
+    margin-left: 10px;
+    color: #9CCF91;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+}
+
+#linkedin-link{
+    margin-left: 10px;
+    color: #9CCF91;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+}
+
+#email-link{
+    margin-left: 10px;
+    color: #9CCF91;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+}
+
+#contatos{
+    display: flex;
+    flex-direction: row;
+}
+
+figure{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#menu-mobile-icon{
+    display: none;
+}
+
+#menu-mobile{
+    display: none;
+}
+
+/* mobile */
+
+@media screen and (max-width: 730px) {
+    #menu{
+        display: none;
+    }
+
+    #menu-mobile-icon{
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #menu-mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: #9CCF91;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .open{
+        display: block;
+    }
+}
